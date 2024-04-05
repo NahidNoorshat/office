@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import About1 from "../../public/aboutsec/About1.png";
-import About2 from "../../public/aboutsec/About2.png";
+import About2 from "../../public/aboutsec/ABout2.png";
 import Mainbutton from "../button/Mainbutton";
 
 const Aboutsec = () => {
