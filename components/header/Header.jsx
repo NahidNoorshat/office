@@ -92,7 +92,7 @@ const Header = () => {
                     <li>Home</li>
                   </Link>
                   <Link
-                    href="about"
+                    href="/about"
                     className={` ${
                       isScrolled
                         ? " text-[#272725] hover:text-sky-900  "
@@ -172,7 +172,7 @@ const Header = () => {
                   Home
                 </li>
               </Link>
-              <Link href="#about">
+              <Link href="/about">
                 <li
                   onClick={() => setOpenmenue(false)}
                   className="hover:text-blue-700  cursor-pointer py-4"
