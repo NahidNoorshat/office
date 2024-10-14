@@ -1,0 +1,37 @@
+/* SliderHero.css */
+.mainSlider {
+  /* background-color: blue; */
+  height: 100%;
+  width: 100%;
+  padding: 60px 30px;
+  /* overflow: visible; */
+  overflow-y: visible;
+}
+
+.inerSlider {
+  background-position: center;
+  background-size: cover;
+  width: 260px;
+  height: 215px;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.inerSlider img {
+  display: block;
+  width: 100%;
+}
+/* Target active slide using Swiper's class */
+
+@media screen and (min-width: 1024px) {
+  /* Adjusted styles for large screens */
+  .swiper-slide-active.inerSlider {
+    width: 400px;
+    height: 300px;
+    transform: scale(1.2); /* Apply scaling only on large screens */
+    transform-origin: center bottom;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  }
+}
