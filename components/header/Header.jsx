@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Logo1 from "../../public/logo/Logo2.png";
-import Logo2 from "../../public/logo/Logo1.png";
+import Logo1 from "../../public/logo/braingalgoitlogo.png";
+import Logo2 from "../../public/logo/braingalgoitlogo.png";
 import Image from "next/image";
 import Mainbutton from "../button/Mainbutton";
 
@@ -61,7 +61,7 @@ const Header = () => {
                     <Image
                       src={Logo1}
                       alt="logo"
-                      width={120}
+                      width={130}
                       height={100}
                       className=" object-cover "
                       priority
@@ -85,8 +85,8 @@ const Header = () => {
                     href="/"
                     className={` ${
                       isScrolled
-                        ? " text-[#272725] hover:text-sky-900  "
-                        : " text-[#F7FAF0] hover:text-blue-400 "
+                        ? " text-[#272725] hover:text-primary-color  "
+                        : " text-[#F7FAF0] hover:text-primary-color "
                     } nav text-xl `}
                   >
                     <li>Home</li>
@@ -95,8 +95,8 @@ const Header = () => {
                     href="/about"
                     className={` ${
                       isScrolled
-                        ? " text-[#272725] hover:text-sky-900  "
-                        : " text-[#F7FAF0] hover:text-blue-400 "
+                        ? " text-[#272725] hover:text-primary-color  "
+                        : " text-[#F7FAF0] hover:text-primary-color "
                     } nav text-xl `}
                   >
                     <li>About</li>
@@ -105,8 +105,8 @@ const Header = () => {
                     href="#service"
                     className={` ${
                       isScrolled
-                        ? " text-[#272725] hover:text-sky-900  "
-                        : " text-[#F7FAF0] hover:text-blue-400 "
+                        ? " text-[#272725] hover:text-primary-color  "
+                        : " text-[#F7FAF0] hover:text-primary-color "
                     } nav text-xl `}
                   >
                     <li>Service</li>
@@ -115,8 +115,8 @@ const Header = () => {
                     href="#blog"
                     className={` ${
                       isScrolled
-                        ? " text-[#272725] hover:text-sky-900  "
-                        : " text-[#F7FAF0] hover:text-blue-400 "
+                        ? " text-[#272725] hover:text-primary-color  "
+                        : " text-[#F7FAF0] hover:text-primary-color "
                     } nav text-xl `}
                   >
                     <li>Blog</li>
@@ -125,8 +125,8 @@ const Header = () => {
                     href="#contact"
                     className={` ${
                       isScrolled
-                        ? " text-[#272725] hover:text-sky-900  "
-                        : " text-[#F7FAF0] hover:text-blue-400 "
+                        ? " text-[#272725] hover:text-primary-color  "
+                        : " text-[#F7FAF0] hover:text-primary-color "
                     } nav text-xl `}
                   >
                     <li>Contact</li>

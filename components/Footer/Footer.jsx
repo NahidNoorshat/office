@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/logo/Logo2.png";
+import Logo from "../../public/logo/braingalgoitlogo.png";
 import { motion } from "framer-motion";
 const MothonLink = motion(Link);
 
@@ -24,7 +24,7 @@ const Footer = () => {
       <div className=" w-full h-full bg-secondary-color text-white px-3 flex flex-col items-center pt-20 pb-7 ">
         <div className=" w-full h-full max-w-7xl flex flex-col md:flex-row justify-around items-start  md:gap-6 lg:gap-8 gap-20 px-10 md:px-0  ">
           <div className=" w-[345px] h-full flex flex-col gap-4 ">
-            <Image src={Logo} className=" h-[110px] w-[255px] " />
+            <Image src={Logo} className=" h-[100px] w-[305px] " />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
               pariatur expedita aperiam vel voluptatum ea officiis similique

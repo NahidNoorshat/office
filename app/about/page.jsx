@@ -2,14 +2,24 @@ import HeroCard from "@/components/aboutpage/HeroCard";
 import SliserHero from "@/components/aboutpage/SliserHero";
 import React from "react";
 import "./Style.css";
+import Image from "next/image";
+import AboutHero from "../../public/aboutsec/aboutpagehero.png";
+import Faqs from "@/components/faqs/Faqs";
+import Team from "@/components/team/Team";
+// import abouthero from "../../public/aboutsec/aboutpagehero"
 
 const page = () => {
   return (
     <>
       <div className=" min-h-screen w-screen  flex flex-col items-center  overflow-hidden relative px-3 ">
-        <div className=" absolute top-40  w-[2285px] h-[30vh] bg-gradient-to-r from-[#000000]/70 to-[#FF3839]/70 -rotate-[30deg] md:-rotate-[20deg] -z-10 "></div>
-        <div className=" absolute top-80  w-[2285.45px] h-[30vh] bg-gradient-to-r from-[#FF3435]/70  to-[#000000]/70 -rotate-[30deg] md:-rotate-[20deg] -z-10 "></div>
-        <div className=" px-5 py-2 w-full h-full flex justify-center mt-40 ">
+        <div className=" absolute top-0 left-0 w-full">
+          <Image
+            src={AboutHero}
+            alt="abouthero"
+            className=" object-fill w-full"
+          />
+        </div>
+        <div className=" hidden md:flex px-5 py-2 w-full h-full  justify-center mt-40 ">
           <HeroCard />
         </div>
         <div className=" mt-8 w-full h-full flex flex-col items-center px-3 text-white pt-32  ">
@@ -40,13 +50,39 @@ const page = () => {
                 </div>
                 <div className=" bg-primary-color border-2 w-[200px] border-primary-color "></div>
               </div>
-              <div className=" h-[40vh] w-screen  flex flex-col items-center  overflow-hidden relative px-3 my-6   ">
-                <div className=" absolute top-[100px] lg:top-20  w-[2285px] h-[10vh] md:h-[15vh] lg:h-[20vh] bg-gradient-to-r from-[#000000]/70 to-[#FF3839]/70  -z-10 "></div>
-                <div className=" absolute top-[140px]  lg:top-25 md:top-30 lg:top-40  w-[2285.45px] h-[10vh] md:h-[15vh] lg:h-[20vh] bg-gradient-to-r from-[#FF3435]/70  to-[#000000]/70  -z-10 "></div>
-                {/* <div className=" h-[30vh] w-[20vw] bg-slate-100 "></div> */}
+              <div className=" container mx-auto max-w-4xl ">
+                <div className=" rounded-3xl border shadow-custom p-4 my-6 flex items-center justify-center ">
+                  <div className=" flex justify-between  ">
+                    <div className=" flex flex-col w-full p-12 text-left gap-y-3 ">
+                      <h3 className=" text-primary-color font-medium text-2xl  ">
+                        Abu Nahid
+                      </h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Fugit, nobis! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Temporibus est eveniet,
+                        voluptate distinctio officiis quis nesciunt enim totam
+                        possimus exercitationem.
+                      </p>
+                    </div>
+                    <div className=" rounded-2xl   overflow-hidden p-5 ">
+                      <Image
+                        src={AboutHero}
+                        alt="ceo"
+                        className=" flex-1 flex w-[355px] h-[206px] object-cover overflow-hidden rounded-2xl "
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="  ">
+          <Team />
+        </div>
+        <div className=" w-full h-full px-3 flex justify-center mt-20 mb-8 ">
+          <Faqs />
         </div>
       </div>
     </>
