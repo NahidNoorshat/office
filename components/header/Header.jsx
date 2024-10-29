@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Logo1 from "../../public/logo/braingalgoitlogo.png";
-import Logo2 from "../../public/logo/braingalgoitlogo.png";
+import Logo1 from "../../public/logo/BrainAlgoITFinal.png";
+import Logo2 from "../../public/logo/BrainAlgoITFinal.png";
 import Image from "next/image";
 import Mainbutton from "../button/Mainbutton";
 
@@ -102,7 +102,7 @@ const Header = () => {
                     <li>About</li>
                   </Link>
                   <Link
-                    href="#service"
+                    href="/service"
                     className={` ${
                       isScrolled
                         ? " text-[#272725] hover:text-primary-color  "
@@ -112,7 +112,7 @@ const Header = () => {
                     <li>Service</li>
                   </Link>
                   <Link
-                    href="#blog"
+                    href="/blog"
                     className={` ${
                       isScrolled
                         ? " text-[#272725] hover:text-primary-color  "
@@ -122,7 +122,7 @@ const Header = () => {
                     <li>Blog</li>
                   </Link>
                   <Link
-                    href="#contact"
+                    href="/contact"
                     className={` ${
                       isScrolled
                         ? " text-[#272725] hover:text-primary-color  "

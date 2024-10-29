@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #ff3839;
-  --secondary-color: #202020;
+  --primary-color: #1e68ed;
+  --secondary-color: #111835;
 }
 
 body {
@@ -21,4 +21,16 @@ body {
 
 .nav:hover::after {
   @apply w-full;
+}
+
+@keyframes slideLeftRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

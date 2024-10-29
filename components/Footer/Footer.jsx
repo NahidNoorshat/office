@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/logo/braingalgoitlogo.png";
+import Logo from "../../public/logo/footerlogobgre.png";
 import { motion } from "framer-motion";
 const MothonLink = motion(Link);
 
@@ -21,16 +21,42 @@ const Footer = () => {
   const year = date.getFullYear();
   return (
     <>
-      <div className=" w-full h-full bg-secondary-color text-white px-3 flex flex-col items-center pt-20 pb-7 ">
+      <div className=" w-full h-full bg-gradient-to-b from-[#111835] via-[#081842] to-[#111835] text-white px-3 flex flex-col items-center  ">
         <div className=" w-full h-full max-w-7xl flex flex-col md:flex-row justify-around items-start  md:gap-6 lg:gap-8 gap-20 px-10 md:px-0  ">
           <div className=" w-[345px] h-full flex flex-col gap-4 ">
-            <Image src={Logo} className=" h-[100px] w-[305px] " />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-              pariatur expedita aperiam vel voluptatum ea officiis similique
-              ipsam, quam quis aut deserunt a fugiat vitae reprehenderit
-              assumenda facere. Hic, in.
-            </p>
+            <Image
+              src={Logo}
+              className=" h-[200px] w-[205px] object-contain "
+            />
+            <div className="flex items-center gap-5 ">
+              <IoMailOutline className=" text-primary-color h-7 w-7  " />
+              <h1>info@brainalgoit.com</h1>
+            </div>
+          </div>
+          {/* <div className=" flex flex-col w-auto h-full gap-9 ">
+            <h1 className=" font-bold text-xl  ">Services</h1>
+            <div className=" ">
+              <ul className=" flex flex-col gap-4 ">
+                <li>UI/UX</li>
+                <li>Web Development</li>
+                <li>MObile App Development</li>
+                <li>SEO</li>
+                <li>Block Chain</li>
+              </ul>
+            </div>
+          </div>
+          <div className=" flex flex-col w-auto h-full gap-9 ">
+            <h1 className=" font-bold text-xl  ">Services</h1>
+            <div className=" ">
+              <ul className=" flex flex-col gap-4 ">
+                <li>Compliance</li>
+                <li>Case Studies</li>
+                <li>Webinars</li>
+                <li>Developers</li>
+              </ul>
+            </div>
+          </div> */}
+          <div className=" w-auto h-full flex flex-col gap-9 ">
             <div className="flex  items-center pb-4">
               <MothonLink
                 href="https://www.facebook.com/omegaitsys"
@@ -68,46 +94,6 @@ const Footer = () => {
               >
                 <LinkedInIcon className="w-[24px] h-[24px]" />
               </MothonLink>
-            </div>
-          </div>
-          <div className=" flex flex-col w-auto h-full gap-9 ">
-            <h1 className=" font-bold text-xl  ">Services</h1>
-            <div className=" ">
-              <ul className=" flex flex-col gap-4 ">
-                <li>UI/UX</li>
-                <li>Web Development</li>
-                <li>MObile App Development</li>
-                <li>SEO</li>
-                <li>Block Chain</li>
-              </ul>
-            </div>
-          </div>
-          <div className=" flex flex-col w-auto h-full gap-9 ">
-            <h1 className=" font-bold text-xl  ">Services</h1>
-            <div className=" ">
-              <ul className=" flex flex-col gap-4 ">
-                <li>Compliance</li>
-                <li>Case Studies</li>
-                <li>Webinars</li>
-                <li>Developers</li>
-              </ul>
-            </div>
-          </div>
-          <div className=" w-auto h-full flex flex-col gap-9 ">
-            <h1 className=" font-bold text-xl ">Contact Information</h1>
-            <div className=" flex  flex-col gap-5 ">
-              <div className="flex items-center gap-5 ">
-                <IoMailOutline className=" text-primary-color h-7 w-7  " />
-                <h1>abunahid767@gmail.com</h1>
-              </div>
-              <div className="flex items-center gap-5 ">
-                <FiPhone className=" text-primary-color h-7 w-7 " />
-                <h1>+880 1757881477</h1>
-              </div>
-              <div className="flex items-center gap-5 ">
-                <IoLocationOutline className=" text-primary-color h-7 w-7 " />
-                <h1>Sector# 10, Road# 11, Uttara-1230 </h1>
-              </div>
             </div>
           </div>
         </div>

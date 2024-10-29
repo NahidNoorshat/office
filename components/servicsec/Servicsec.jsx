@@ -28,24 +28,24 @@ const Servicsec = () => {
               </h1>
             </div>
             <div className="  leading-6 text-base font-normal my-3 ">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum,
-                asperiores culpa! Quos quam numquam excepturi mollitia, veniam
-                porro soluta alias? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quidem veritatis iusto corporis eveniet omnis
-                eius. Ullam eaque aut facere cupiditate?
-              </p>
+              <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-x-4 ">
+                <ServiceCard />
+                <ServiceCard />
+                <ServiceCard />
+                {/* <ServiceCard />
+                <ServiceCard /> */}
+              </div>
             </div>
-            <div className=" my-4 ">
+            {/* <div className=" my-4 ">
               <Mainbutton />
-            </div>
+            </div> */}
           </div>
-          <div className=" w-full px-2 grid lg:grid-cols-2 gap-x-3 gap-y-2">
+          {/* <div className=" w-full px-2 grid lg:grid-cols-2 gap-x-3 gap-y-2">
             <ServiceCard />
             <ServiceCard />
             <ServiceCard />
             <ServiceCard />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

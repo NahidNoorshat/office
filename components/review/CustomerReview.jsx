@@ -23,17 +23,16 @@ const CustomerReview = () => {
               <div className="  border-2 w-[143px] bg-[#D8D8D8] "></div>
               <div className=" flex font-bold text-base leading-6 ">
                 <h1 className="  ">
-                  Customer{" "}
+                  Customer
                   <span className=" font-normal text-primary-color">
-                    {" "}
                     Feedback
-                  </span>{" "}
+                  </span>
                 </h1>
               </div>
             </div>
             <div className=" font-bold text-5xl  leading-[60.24px] my-4 ">
               <h1 className=" text-white ">
-                What Our{" "}
+                What Our
                 <span className=" text-primary-color "> Customer </span> Say
                 About Us
               </h1>
@@ -41,57 +40,45 @@ const CustomerReview = () => {
           </div>
           <div className=" h-full w-full ">
             <div className=" flex items-center justify-end gap-4  ">
-              <div className="  border-2 w-[200px] bg-[#D8D8D8] "></div>
+              <div className=" hidden md:flex border-2 w-[200px] bg-[#D8D8D8] "></div>
               <div className=""></div>
             </div>
           </div>
         </div>
-        <div className="  ">
-          <div className=" h-full w-full  flex justify-center px-4  ">
-            {/* <h1> Nahid</h1> */}
-            <Swiper
-              grabCursor={true}
-              spaceBetween={30}
-              breakpoints={{
-                // when window width is >= 640px
-                640: {
-                  width: 640,
-                  slidesPerView: 1,
-                },
-                // when window width is >= 768px
-                768: {
-                  width: 768,
-                  slidesPerView: 2,
-                },
-                1024: {
-                  width: 1024,
-                  slidesPerView: 3,
-                },
-              }}
-              pagination={true}
-              modules={[Pagination]}
-              className=" myCustomerSlider "
-            >
-              <SwiperSlide className="  ">
-                <CustomrtReviewCard />
-              </SwiperSlide>
-              <SwiperSlide className="  ">
-                <CustomrtReviewCard />
-              </SwiperSlide>
-              <SwiperSlide className="  ">
-                <CustomrtReviewCard />
-              </SwiperSlide>
-              <SwiperSlide className="  ">
-                <CustomrtReviewCard />
-              </SwiperSlide>
-              <SwiperSlide className="  ">
-                <CustomrtReviewCard />
-              </SwiperSlide>
-              <SwiperSlide className="  ">
-                <CustomrtReviewCard />
-              </SwiperSlide>
-            </Swiper>
-          </div>
+        {/* <div className=" flex justify-center gap-8 ">
+          <CustomrtReviewCard />
+          <CustomrtReviewCard />
+        </div> */}
+        <div className=" w-full ">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+              },
+            }}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <CustomrtReviewCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CustomrtReviewCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CustomrtReviewCard />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </>

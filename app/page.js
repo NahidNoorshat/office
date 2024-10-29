@@ -16,13 +16,13 @@ export default function Home() {
       <div className=" w-full h-full px-3 flex justify-center mt-20 mb-12 md:mb-20 lg:mb-32   ">
         <Aboutsec />
       </div>
-      <div className=" mt-8 w-full h-full flex flex-col items-center bg-secondary-color px-3 text-white py-32  ">
+      <div className=" mt-8 w-full h-full flex flex-col items-center bg-gradient-to-b from-[#111835] via-[#0b2055] to-[#111835] px-3 text-white py-32  ">
         <Servicsec />
       </div>
       <div className=" w-full h-full px-3 flex justify-center mt-20 mb-8 ">
         <OurProtfolio />
       </div>
-      <div className="mt-8 w-full h-full flex flex-col items-center bg-secondary-color px-3 text-white py-32">
+      <div className="mt-8 w-full h-full flex flex-col items-center bg-gradient-to-b from-[#111835] via-[#0b2055] to-[#111835] px-3 text-white py-32">
         <CustomerReview />
       </div>
       <div className=" w-full h-full px-3 flex justify-center mt-20 mb-8 ">
