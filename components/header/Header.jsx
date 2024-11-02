@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import Logo2 from "../../public/logo/BrainAlgoITHeader.png";
 import Logo1 from "../../public/logo/BrainAlgoITFinal.png";
-import Logo2 from "../../public/logo/BrainAlgoITFinal.png";
 import Image from "next/image";
 import Mainbutton from "../button/Mainbutton";
 

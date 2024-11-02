@@ -20,7 +20,7 @@ const ServiceCardpage = ({ img, title, details }) => {
         <h2 className="font-semibold text-primary-color text-2xl group-hover:text-white transition-colors duration-300">
           {title}
         </h2>
-        <p className="max-w-[400px] group-hover:text-white transition-colors duration-300">
+        <p className="max-w-[350px] group-hover:text-white transition-colors duration-300">
           {details}
         </p>
       </div>

@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 import "./CustomarReview.css";
 
-import { Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 const CustomerReview = () => {
   return (

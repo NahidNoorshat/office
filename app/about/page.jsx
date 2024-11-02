@@ -7,6 +7,7 @@ import AboutHero from "../../public/aboutpage/pic2.jpg";
 import Faqs from "@/components/faqs/Faqs";
 import Team from "@/components/team/Team";
 import Link from "next/link";
+import Countdown from "@/components/countup/Countdown";
 // import abouthero from "../../public/aboutsec/aboutpagehero"
 
 const page = () => {
@@ -37,6 +38,9 @@ const page = () => {
         {/* <div className=" mt-8 w-full h-full flex flex-col items-center px-3 text-white pt-32  ">
           <SliserHero />
         </div> */}
+        <div className=" w-full mb-2 bg-[#110323] flex flex-col items-center py-36 ">
+          <Countdown />
+        </div>
         <div id="team" className=" w-full h-full flex flex-col items-center  ">
           <div className=" w-full h-full flex flex-col items-center my-6 px-3 ">
             <div className=" flex items-center gap-4  ">
