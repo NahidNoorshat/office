@@ -20,43 +20,43 @@ const servicedata = [
   {
     title: "Web Development",
     details:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,aliquid?",
+      "Develop robust online applications to suit your business needs and cater to your clients faithfully.",
     image: "/servicesec/webdevelopment.png",
   },
   {
     title: "Software Development",
     details:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,aliquid?",
+      "Develop tailored software solutions that meet your unique business needs, driving efficiency and innovation in your operations",
     image: "/servicesec/softwatedevelopment.png",
   },
   {
     title: "App Development",
     details:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,aliquid?",
+      "Developing innovative and native mobile apps for Android, iOS, BlackBerry and Windows platforms",
     image: "/servicesec/appdevelopment.png",
   },
   {
-    title: "Social Development",
+    title: "Digital Marketing",
     details:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,aliquid?",
+      "Boost your online presence with our digital marketing services, designed to increase engagement, drive traffic, and grow your brand effectively",
     image: "/servicesec/socialmedia.png",
   },
   {
     title: "UI/UX",
     details:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,aliquid?",
-    image: "/servicesec/socialmedia.png",
+      "We are experts with creative feature-packed & high performing UX and UI design with our creative young professionals",
+    image: "/servicesec/uiux.png",
   },
   {
     title: "BlockChain",
     details:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,aliquid?",
+      "Build secure and transparent solutions with our blockchain services, enhancing data integrity and trust in your business transactions",
     image: "/servicesec/blockchain.png",
   },
   {
     title: "Machine Learning",
     details:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,aliquid?",
+      "Machine Learning and Artificial Intelligence solution for your organization by experts hand",
     image: "/servicesec/machinelearning.png",
   },
 ];
@@ -106,9 +106,9 @@ const page = () => {
             SERVICE
           </h2>
           <p className=" text-center text-base ">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptates, blanditiis ratione! Rerum quod veritatis amet cum
-            impedit, labore temporibus praesentium!
+            Our goal is to provide a flexible, high-availability system that
+            represents the new model for communications in today’s global
+            infrastructure
           </p>
         </div>
         {/* service card */}

@@ -1,6 +1,17 @@
 import React from "react";
 import Qustion from "./Qustion";
 
+const qustiondata = [
+  {
+    qustion: "What services do you offer?",
+    ans: "We provide a variety of services, including custom software development, mobile app development, web development, cloud solutions, IT consulting, and ongoing support and maintenance.",
+  },
+  {
+    qustion: "What industries do you specialize in?",
+    ans: "We specialize in multiple industries, including healthcare, finance, education, e-commerce, logistics, real estate, and more. Our team is experienced in addressing diverse, industry-specific needs",
+  },
+];
+
 const Faqs = () => {
   return (
     <>
@@ -21,11 +32,14 @@ const Faqs = () => {
           </div>
         </div>
         <div className=" w-full h-full flex flex-col gap-5 my-6 ">
+          {/* <Qustion />
           <Qustion />
           <Qustion />
           <Qustion />
-          <Qustion />
-          <Qustion />
+          <Qustion /> */}
+          {qustiondata?.map((item, i) => {
+            return <Qustion qustion={item.qustion} ans={item.ans} key={i} />;
+          })}
         </div>
       </div>
     </>

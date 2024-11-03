@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Logo2 from "../../public/logo/BrainAlgoITHeader.png";
-import Logo1 from "../../public/logo/BrainAlgoITFinal.png";
+import Logo2 from "../../public/logo/BrainAlgoDark.png";
+import Logo1 from "../../public/logo/BrainAlgo.png";
 import Image from "next/image";
 import Mainbutton from "../button/Mainbutton";
 
@@ -61,8 +61,8 @@ const Header = () => {
                     <Image
                       src={Logo1}
                       alt="logo"
-                      width={130}
-                      height={100}
+                      width={200}
+                      height={350}
                       className=" object-cover "
                       priority
                     />
@@ -71,8 +71,8 @@ const Header = () => {
                     <Image
                       src={Logo2}
                       alt="logo"
-                      width={130}
-                      height={100}
+                      width={200}
+                      height={350}
                       className=" object-cover "
                       priority
                     />
@@ -180,7 +180,7 @@ const Header = () => {
                   About
                 </li>
               </Link>
-              <Link href="#service">
+              <Link href="/service">
                 <li
                   onClick={() => setOpenmenue(false)}
                   className=" hover:text-blue-700 cursor-pointer py-4"
@@ -188,7 +188,7 @@ const Header = () => {
                   Service
                 </li>
               </Link>
-              <Link href="#blog">
+              <Link href="/blog">
                 <li
                   onClick={() => setOpenmenue(false)}
                   className="hover:text-blue-700  cursor-pointer py-4"
@@ -196,7 +196,7 @@ const Header = () => {
                   Blog
                 </li>
               </Link>
-              <Link href="#contact">
+              <Link href="/contact">
                 <li
                   onClick={() => setOpenmenue(false)}
                   className="hover:text-blue-700  cursor-pointer py-4"

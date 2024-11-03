@@ -23,9 +23,10 @@ const ContuctUssec = () => {
           </div>
           <div className="  leading-6 text-base font-normal my-3 ">
             <p className=" text-[#696969] ">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum,
-              asperiores culpa! Quos quam numquam excepturi mollitia, veniam
-              porro soluta alias? Lorem ipsum dolor
+              Have questions or need assistance? We’d love to hear from you!
+              Please fill out the form below or email us at
+              [info@brainalgoit.com], and our team will get back to you as soon
+              as possible. Your inquiries are important to us!
             </p>
           </div>
 

@@ -40,10 +40,27 @@ const Footer = () => {
               <h3 className=" text-lg  ">Privacy Policy</h3>
             </div>
             <div className=" flex justify-center gap-4  ">
-              <FacebookIcon className=" w-7 h-7 " />
-              <LinkedInIcon className=" w-7 h-7 " />
-              <InstagramIcon className=" w-7 h-7 " />
-              <XIcon className=" w-7 h-7 " />
+              <Link
+                href={"https://www.facebook.com/profile.php?id=61567007740447"}
+                target="_blank"
+              >
+                <FacebookIcon className=" w-7 h-7 " />
+              </Link>
+              <Link
+                href={"https://www.linkedin.com/company/brainalgo-it/"}
+                target="_blank"
+              >
+                <LinkedInIcon className=" w-7 h-7 " />
+              </Link>
+              <Link
+                href={"https://www.instagram.com/brainalgoit/"}
+                target="_blank"
+              >
+                <InstagramIcon className=" w-7 h-7 " />
+              </Link>
+              <Link href={"/"}>
+                <XIcon className=" w-7 h-7 " />
+              </Link>
             </div>
           </div>
         </div>

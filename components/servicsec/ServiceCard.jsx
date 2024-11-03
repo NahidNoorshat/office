@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import UiUXservice from "./../../public/servicesec/UiUXservice.png";
 
-const ServiceCard = () => {
+const ServiceCard = ({ title, desc }) => {
   return (
     <div className="relative w-full h-full flex flex-col items-center min-w-60 max-w-full text-center overflow-hidden">
       {/* Icon section */}
@@ -21,11 +21,8 @@ const ServiceCard = () => {
 
         {/* Content */}
         <div className="relative z-10">
-          <h1 className="font-bold text-base leading-6">Ui/Ux</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum
-            dolor sit amet.
-          </p>
+          <h1 className="font-bold text-base leading-6">{title}</h1>
+          <p>{desc}</p>
         </div>
       </div>
     </div>

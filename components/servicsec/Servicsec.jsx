@@ -2,6 +2,21 @@ import React from "react";
 import Mainbutton from "../button/Mainbutton";
 import ServiceCard from "./ServiceCard";
 
+const servicedata = [
+  {
+    title: "Web App Development",
+    desc: "Develop robust online applications to suit your business needs and cater to your clients faithfully.",
+  },
+  {
+    title: "Mobile App Development",
+    desc: "Developing innovative and native mobile apps for Android, iOS, BlackBerry and Windows platforms.",
+  },
+  {
+    title: "Machin Learning",
+    desc: "Machine Learning and Artificial Intelligence solution for your organization by experts hand",
+  },
+];
+
 const Servicsec = () => {
   return (
     <>
@@ -30,9 +45,14 @@ const Servicsec = () => {
             </div>
             <div className="  leading-6 text-base font-normal my-3 ">
               <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-x-4 ">
+                {/* <ServiceCard />
                 <ServiceCard />
-                <ServiceCard />
-                <ServiceCard />
+                <ServiceCard /> */}
+                {servicedata?.map((item, i) => {
+                  return (
+                    <ServiceCard title={item.title} desc={item.desc} key={i} />
+                  );
+                })}
               </div>
             </div>
           </div>

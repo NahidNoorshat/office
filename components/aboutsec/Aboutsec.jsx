@@ -25,26 +25,22 @@ const Aboutsec = () => {
               <div className="  border-2 w-[143px] bg-[#D8D8D8] "></div>
               <div className=" flex font-bold text-base leading-6 ">
                 <h1 className=" text-primary-color ">
-                  About <span className=" font-normal"> Omega It Sys</span>{" "}
+                  About <span className=" font-normal"> BrainAlgo IT</span>
                 </h1>
               </div>
             </div>
             <div className=" font-bold text-5xl text-black leading-[60.24px] my-4 ">
               <h1>
-                {" "}
-                Introduction To Best{" "}
-                <span className=" text-primary-color ">
-                  Digital Agency
-                </span>{" "}
+                Introduction To Best
+                <span className=" text-primary-color ">Digital Agency</span>
               </h1>
             </div>
             <div className=" text-[#696969] leading-6 text-base font-normal my-3 ">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum,
-                asperiores culpa! Quos quam numquam excepturi mollitia, veniam
-                porro soluta alias? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quidem veritatis iusto corporis eveniet omnis
-                eius. Ullam eaque aut facere cupiditate?
+                BrainAlgo IT is your growth partner, delivering creative,
+                tech-driven solutions to make your brand shine online. From
+                engaging web designs to impactful marketing, we turn your vision
+                into success.
               </p>
             </div>
             <div className=" my-4 ">

@@ -13,6 +13,27 @@ import "./CustomarReview.css";
 
 import { Navigation } from "swiper/modules";
 
+const reviewdata = [
+  {
+    desc: "Great website! The design is clean and user-friendly, making it easy to navigate. The content is well-organized and informative, and everything loads quickly. Overall, an excellent user experience!",
+    name: "ALex",
+    designation: "CEO, OmegaItsys",
+    img: "/owner1.jpg",
+  },
+  {
+    desc: "Impressive website! The layout is visually appealing, and the information is clear and accessible. It’s easy to find what I need, and the design feels modern and professional. Well done!",
+    name: "Mr. Albert",
+    designation: "Marketing Dir, Hungray DUG ",
+    img: "/owner2.jpg",
+  },
+  // {
+  //   desc: "Great website! The design is clean and user-friendly, making it easy to navigate. The content is well-organized and informative, and everything loads quickly. Overall, an excellent user experience!",
+  // },
+  // {
+  //   desc: "Great website! The design is clean and user-friendly, making it easy to navigate. The content is well-organized and informative, and everything loads quickly. Overall, an excellent user experience!",
+  // },
+];
+
 const CustomerReview = () => {
   return (
     <>
@@ -69,7 +90,7 @@ const CustomerReview = () => {
             }}
             className="mySwiper"
           >
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <CustomrtReviewCard />
             </SwiperSlide>
             <SwiperSlide>
@@ -77,7 +98,19 @@ const CustomerReview = () => {
             </SwiperSlide>
             <SwiperSlide>
               <CustomrtReviewCard />
-            </SwiperSlide>
+            </SwiperSlide> */}
+            {reviewdata?.map((item, i) => {
+              return (
+                <SwiperSlide key={i}>
+                  <CustomrtReviewCard
+                    desc={item.desc}
+                    name={item.name}
+                    designation={item.designation}
+                    img={item.img}
+                  />
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>
