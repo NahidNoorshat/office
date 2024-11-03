@@ -27,12 +27,12 @@ const page = () => {
               <div className=" flex items-center gap-4 ">
                 <div className="  border-2 w-[143px] bg-[#D8D8D8] "></div>
                 <div className=" flex font-bold text-base leading-6 ">
-                  <h1 className=" text-primary-color  ">Contuct Us</h1>
+                  <h1 className=" text-primary-color  ">Contact Us</h1>
                 </div>
               </div>
               <div className=" font-bold text-5xl text-black leading-[60.24px] my-4 ">
                 <h1 className="text-primary-color">
-                  Contuct
+                  Contact
                   <span className=" text-black ">
                     {" "}
                     Us & We Can Work Together
@@ -41,9 +41,10 @@ const page = () => {
               </div>
               <div className="  leading-6 text-base font-normal my-3 ">
                 <p className=" text-[#696969] ">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum, asperiores culpa! Quos quam numquam excepturi mollitia,
-                  veniam porro soluta alias? Lorem ipsum dolor
+                  Have questions or need assistance? We’d love to hear from you!
+                  Please fill out the form below or email us at
+                  [info@brainalgoit.com], and our team will get back to you as
+                  soon as possible. Your inquiries are important to us!
                 </p>
               </div>
 

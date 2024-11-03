@@ -128,7 +128,7 @@ const page = () => {
           <h2 className=" font-semibold text-5xl md:text-6xl  ">
             Industries We Serve
           </h2>
-          <div className=" w-full h-full bg-gradient-to-b from-[#111835] via-[#0b2055] to-[#111835] flex justify-center text-white ">
+          <div className=" max-w-7xl w-full h-full bg-gradient-to-b from-[#111835] via-[#0b2055] to-[#111835] flex justify-center text-white rounded-3xl overflow-hidden shadow-lg ">
             <div className="max-w-5xl w-full grid  md:grid-cols-3 grid-cols-1 gap-y-10 py-11 ">
               {industydata?.map((item, i) => {
                 return <Industry icon={item.img} title={item.title} key={i} />;

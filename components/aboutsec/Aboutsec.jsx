@@ -31,7 +31,7 @@ const Aboutsec = () => {
             </div>
             <div className=" font-bold text-5xl text-black leading-[60.24px] my-4 ">
               <h1>
-                Introduction To Best
+                Introduction To The Best
                 <span className=" text-primary-color ">Digital Agency</span>
               </h1>
             </div>

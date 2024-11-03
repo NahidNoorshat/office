@@ -9,6 +9,13 @@ import "./SliderCss.css";
 
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
+import Dashbord from "../../public/profolio/dashbord.jpg";
+import Gym from "../../public/profolio/gym.png";
+import Mobile from "../../public/profolio/mobilapp.png";
+import Website from "../../public/profolio/website1.png";
+import Analetic from "../../public/profolio/analetic.jpg";
+import Image from "next/image";
+
 const SliderProject = () => {
   return (
     <>
@@ -33,25 +40,22 @@ const SliderProject = () => {
           className=" myClass "
         >
           <SwiperSlide className=" mySlider ">
-            <img
-              src="https://swiperjs.com/demos/images/nature-1.jpg"
-              className=" w-full block "
-            />
+            <Image src={Dashbord} className=" w-full block " />
           </SwiperSlide>
           <SwiperSlide className=" mySlider ">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <Image src={Mobile} />
           </SwiperSlide>
           <SwiperSlide className=" mySlider">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <Image src={Gym} />
           </SwiperSlide>
           <SwiperSlide className=" mySlider">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <Image src={Dashbord} />
           </SwiperSlide>
           <SwiperSlide className=" mySlider">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <Image src={Website} />
           </SwiperSlide>
           <SwiperSlide className=" mySlider">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <Image src={Analetic} />
           </SwiperSlide>
         </Swiper>
       </div>

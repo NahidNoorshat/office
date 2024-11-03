@@ -12,12 +12,12 @@ const ContuctUssec = () => {
           <div className=" flex items-center gap-4 ">
             <div className="  border-2 w-[143px] bg-[#D8D8D8] "></div>
             <div className=" flex font-bold text-base leading-6 ">
-              <h1 className=" text-primary-color  ">Contuct Us</h1>
+              <h1 className=" text-primary-color  ">Contact Us</h1>
             </div>
           </div>
           <div className=" font-bold text-5xl text-black leading-[60.24px] my-4 ">
             <h1 className="text-primary-color">
-              Contuct
+              Contact
               <span className=" text-black "> Us & We Can Work Together</span>
             </h1>
           </div>
