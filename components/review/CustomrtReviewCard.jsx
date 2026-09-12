@@ -1,18 +1,16 @@
 import Image from "next/image";
 import React from "react";
-import UiUXservice from "./../../public/servicesec/UiUXservice.png";
-
-import Iranian from "../../public/iranian.jpg";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const CustomrtReviewCard = ({ desc, designation, name, img }) => {
   return (
     <>
-      <div className=" max-w-2xl min-w-40  h-auto bg-[#4067e6]/5 flex items-center gap-x-2 p-8">
-        <div className=" rounded-md overflow-hidden flex flex-col items-center gap-y-2">
+      <div className="w-full max-w-2xl min-w-0 min-h-[300px] h-full bg-[#4067e6]/5 flex flex-col sm:flex-row items-center gap-6 p-6 sm:p-8">
+        <div className="rounded-md overflow-hidden shrink-0 flex flex-col items-center gap-y-2">
           <Image
             src={img}
+            alt={`${name} profile`}
             width={150}
             height={200}
             className=" w-[150px] h-[200px] object-cover "
@@ -20,9 +18,9 @@ const CustomrtReviewCard = ({ desc, designation, name, img }) => {
           <h2 className=" text-lg font-semibold ">{name}</h2>
           <p>{designation}</p>
         </div>
-        <div className=" flex flex-1 ">
-          <div className=" bg-white h-[150px] w-2 mx-4 "></div>
-          <div className=" flex flex-col gap-y-3 mb-14 mx-2  ">
+        <div className="flex flex-1 min-w-0 w-full">
+          <div className="bg-white h-auto min-h-[150px] w-1 shrink-0 mx-4"></div>
+          <div className="flex flex-col gap-y-3 mx-2 min-w-0">
             <div className=" flex gap-1 ">
               <MdOutlineStarPurple500 className=" w-5 h-5 text-white " />
               <MdOutlineStarPurple500 className=" w-5 h-5 text-white " />

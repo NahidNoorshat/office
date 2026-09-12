@@ -53,8 +53,8 @@ const Header = () => {
         }`}
       >
         <div className=" h-full w-full flex items-center justify-center px-2">
-          <div className=" flex h-full w-full max-w-7xl   ">
-            <div className=" flex w-full  items-center justify-between  ">
+          <div className="relative flex h-full w-full max-w-7xl">
+            <div className="flex h-full w-full items-center justify-between">
               <div className="">
                 <Link href="/">
                   <div className={`${isScrolled && " hidden"}`}>
@@ -79,8 +79,8 @@ const Header = () => {
                   </div>
                 </Link>
               </div>
-              <div className="  ">
-                <ul className=" hidden md:flex gap-5 ">
+              <div className="absolute left-1/2 hidden -translate-x-1/2 md:block">
+                <ul className="flex items-center justify-center gap-5 whitespace-nowrap">
                   <Link
                     href="/"
                     className={` ${
@@ -133,7 +133,7 @@ const Header = () => {
                   </Link>
                 </ul>
               </div>
-              <div className=" hidden md:flex ">
+              <div className="hidden md:flex">
                 <Mainbutton />
               </div>
 

@@ -1,82 +1,155 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-import Logo from "../../public/footer/logofooternaim.png";
-import { motion } from "framer-motion";
-const MothonLink = motion(Link);
-
-import FacebookIcon from "@mui/icons-material/Facebook";
-
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from "@mui/icons-material/X";
 import Link from "next/link";
-import { IoMailOutline, IoLocationOutline } from "react-icons/io5";
-import { FiPhone } from "react-icons/fi";
-import { FaRegCopyright } from "react-icons/fa";
+import React from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { IoLocationOutline, IoMailOutline } from "react-icons/io5";
+import Logo from "../../public/logo/BrainAlgo.png";
+
+const serviceLinks = [
+  { label: "Web App Development", href: "/service" },
+  { label: "Mobile App Development", href: "/service" },
+  { label: "Machine Learning", href: "/service" },
+];
+
+const companyLinks = [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Services", href: "/service" },
+  { label: "Contact", href: "/contact" },
+];
+
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/brainalgoit",
+    label: "Facebook",
+    icon: FaFacebookF,
+  },
+  {
+    href: "https://www.instagram.com/brainalgoit/",
+    label: "Instagram",
+    icon: FaInstagram,
+  },
+  {
+    href: "https://www.linkedin.com/company/brainalgo-it/",
+    label: "LinkedIn",
+    icon: FaLinkedinIn,
+  },
+  {
+    href: "https://x.com/brainalgoit",
+    label: "X",
+    icon: FaXTwitter,
+  },
+];
 
 const Footer = () => {
-  const date = new Date();
-  const year = date.getFullYear();
+  const year = new Date().getFullYear();
+
   return (
-    <>
-      <div className=" w-full h-full bg-gradient-to-b from-[#111835] via-[#081842] to-[#111835] text-white px-3 flex flex-col items-center   ">
-        <div className=" w-full h-full max-w-7xl flex flex-col md:flex-row justify-start md:justify-between items-start md:items-end  md:gap-6 lg:gap-8 gap-20  py-6 container mx-auto ">
-          <div className=" flex flex-col gap-6 ">
-            <Image
-              src={Logo}
-              alt="Logo"
-              className=" w-[300px] h-full object-cover "
-            />
-            <div className=" flex items-center ml-9 ">
-              {/* <IoMailOutline className=" w-10 h-10 " /> */}
-              <h2 className=" text-lg  ">info@brainalgoit.com</h2>
-            </div>
+    <footer className="w-full bg-secondary-color px-4 text-white">
+      <div className="mx-auto w-full max-w-7xl py-14 md:py-16">
+        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1.3fr] md:gap-8">
+          <div className="flex flex-col items-start gap-5">
+            <Link href="/" aria-label="BrainAlgo IT home">
+              <Image
+                src={Logo}
+                alt="BrainAlgo IT"
+                width={205}
+                height={120}
+                className="h-auto w-[205px] object-contain"
+              />
+            </Link>
+            <p className="max-w-xs leading-7 text-white/70">
+              Your growth partner for creative, reliable, and scalable digital
+              solutions.
+            </p>
+            <a
+              href="mailto:info@brainalgoit.com"
+              className="flex items-center gap-3 text-white transition-colors hover:text-primary-color"
+            >
+              <IoMailOutline className="h-5 w-5 text-primary-color" />
+              <span>info@brainalgoit.com</span>
+            </a>
           </div>
-          <div className=" flex flex-col justify-center gap-7  ">
-            <div className=" flex gap-5 ">
-              <h3 className=" text-lg  ">Term of Service</h3>
-              <h3 className=" text-lg  ">Privacy Policy</h3>
-            </div>
-            <div className=" flex justify-center gap-4  ">
-              <Link
-                href={"https://www.facebook.com/profile.php?id=61567007740447"}
-                target="_blank"
-              >
-                <FacebookIcon className=" w-7 h-7 " />
-              </Link>
-              <Link
-                href={"https://www.linkedin.com/company/brainalgo-it/"}
-                target="_blank"
-              >
-                <LinkedInIcon className=" w-7 h-7 " />
-              </Link>
-              <Link
-                href={"https://www.instagram.com/brainalgoit/"}
-                target="_blank"
-              >
-                <InstagramIcon className=" w-7 h-7 " />
-              </Link>
-              <Link href={"/"}>
-                <XIcon className=" w-7 h-7 " />
-              </Link>
+
+          <div>
+            <h2 className="mb-5 text-lg font-semibold">Company</h2>
+            <nav
+              aria-label="Company navigation"
+              className="flex flex-col gap-3"
+            >
+              {companyLinks.map(({ label, href }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  className="w-fit text-white/70 transition-colors hover:text-primary-color"
+                >
+                  {label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          <div>
+            <h2 className="mb-5 text-lg font-semibold">Our Services</h2>
+            <nav
+              aria-label="Services navigation"
+              className="flex flex-col gap-3"
+            >
+              {serviceLinks.map(({ label, href }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  className="w-fit text-white/70 transition-colors hover:text-primary-color"
+                >
+                  {label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          <div>
+            <h2 className="mb-5 text-lg font-semibold">Visit Our Office</h2>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Sector%2010%2C%20Uttara%2C%20Dhaka%201230"
+              target="_blank"
+              rel="noreferrer"
+              className="flex max-w-xs items-start gap-3 text-white/70 transition-colors hover:text-primary-color"
+            >
+              <IoLocationOutline className="mt-1 h-5 w-5 shrink-0 text-primary-color" />
+              <span>Sector #10, Uttara, Dhaka-1230</span>
+            </a>
+            <div className="mt-7 flex items-center gap-4">
+              {socialLinks.map(({ href, label, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={label}
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-primary-color hover:text-primary-color"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
             </div>
           </div>
         </div>
-        <div className=" text-white max-w-2xl w-full h-1 mt-9">
-          <hr className="  " />
-        </div>
-        <div className=" w-full h-full max-w-7xl flex justify-center px-3 py-2 my-1 ">
-          <div className=" flex gap-2 items-center ">
-            <FaRegCopyright />
-            <h1> {year} </h1>
-            <h1>BrainAlgo IT.</h1>
-            <h1>All Rights reserved</h1>
-          </div>
+
+        <div className="mt-12 flex flex-col gap-3 border-t border-white/15 pt-5 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; {year} BrainAlgo IT. All rights reserved.</p>
+          <Link href="/contact" className="w-fit hover:text-primary-color">
+            Let&apos;s work together
+          </Link>
         </div>
       </div>
-    </>
+    </footer>
   );
 };
 

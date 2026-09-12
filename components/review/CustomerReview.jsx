@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import ServiceCard from "../servicsec/ServiceCard";
 import CustomrtReviewCard from "./CustomrtReviewCard";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,8 +9,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 import "./CustomarReview.css";
-
-import { Navigation } from "swiper/modules";
 
 const reviewdata = [
   {
@@ -88,7 +85,7 @@ const CustomerReview = () => {
                 spaceBetween: 50,
               },
             }}
-            className="mySwiper"
+            className="mySwiper myCustomerSlider"
           >
             {/* <SwiperSlide>
               <CustomrtReviewCard />
@@ -99,9 +96,9 @@ const CustomerReview = () => {
             <SwiperSlide>
               <CustomrtReviewCard />
             </SwiperSlide> */}
-            {reviewdata?.map((item, i) => {
+            {reviewdata.map((item) => {
               return (
-                <SwiperSlide key={i}>
+                <SwiperSlide key={item.name}>
                   <CustomrtReviewCard
                     desc={item.desc}
                     name={item.name}

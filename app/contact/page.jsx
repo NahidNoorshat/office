@@ -83,7 +83,7 @@ const page = () => {
               </div>
               <div className="flex items-center gap-5 ">
                 <IoMailOutline className=" text-white h-16 w-16  " />
-                <h1 className="text-3xl">info@brainalgoit.com</h1>
+                <h1 className="text-3xl">brainalgoit@gmail.com</h1>
               </div>
               <div className="flex items-center gap-5 ">
                 <IoLocationOutline className=" text-white h-16 w-16  " />
